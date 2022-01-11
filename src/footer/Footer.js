@@ -1,6 +1,6 @@
 import React from "react";
-import facebook from './img/facebook.png';
-import behance from './img/behance.png';
+import facebook from '../img/facebook.png';
+import behance from '../img/behance.png';
 
 
 function SnIcon(prop){

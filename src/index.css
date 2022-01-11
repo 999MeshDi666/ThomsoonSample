@@ -31,7 +31,7 @@ ul,li{
   align-items: center;
 }
 .header_logo{
-  margin-left: 77px;
+  margin-left: 160px;
   font-weight: bolder;
   font-size: 23px;
   user-select: none;
@@ -94,10 +94,14 @@ ul,li{
   color: #999;
 }
 
-
-.index_page{
-  padding: 80px 0 165px 77px;
+.container{
+  width: 1176px;
+  margin: 0 auto;
 }
+.general_page{
+  padding: 80px 0 0px 0;
+}
+
 .text_content{
   width: 432px;
 }
@@ -113,12 +117,12 @@ ul,li{
   word-spacing: 5px;
 }
 
-.img_content{
+.index_img_content{
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   width: 850px;
-  height: 950px;
+  height: 1186px;
 
 }
 .general_block{
@@ -167,18 +171,17 @@ ul,li{
 .hover_block p{
   color: #686868;
 }
-.third_img_block{
+.third_index_block{
   top: -471px;
 }
-.fourth_img_block{
+.fourth_index_block{
   top: -376px;
 }
-.fifth_img_block{
+.fifth_index_block{
   top: -779px;
 }
-.sixth_img_block{
+.sixth_index_block{
   top: -652px;
-
 }
 .side_image{
   position: absolute;
@@ -186,16 +189,34 @@ ul,li{
   bottom: 0;
   right: 0;
   user-select: none;
-  width: 575px;
-  height: 900px;
+  width: 500px;
+  height: 1080px;
 }
 
+
+
+.project_img_content{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 980px;
+}
+
+.fourth_projects_block{
+  top: -471px;
+}
+.fifth_projects_block{
+  top: -376px;
+}
+.sixth_projects_block{
+  top: -471px;
+}
 
 .footer{
   background-image: url(./img/footerbg.png);
   padding: 68px 10px;
   text-align: center;
-
 }
 .social_network{
   margin-bottom: 64px;
