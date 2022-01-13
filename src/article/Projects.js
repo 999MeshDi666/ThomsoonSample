@@ -32,8 +32,8 @@ const imgBlocksList = [
 function ProjectContent(){
 	return(
 		<div className="project_content">
-			<TextContent title = {projectTxt.title} text = {projectTxt.text} />
-	    <ImgContent imgContent = "project_img_content" imgBList = {imgBlocksList}/>
+				<TextContent class = "text_content" title = {projectTxt.title} text = {projectTxt.text} />
+	    	<ImgContent imgContent = "img_content" imgBList = {imgBlocksList}/>
 		</div>
 	);
 };

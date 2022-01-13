@@ -23,7 +23,7 @@ function ImgBlocks(prop){
 
 function ImgContent(prop){
 	const imgBlockList = prop.imgBList;
-	const showImgBlocks = imgBlockList.map((list)=> <ImgBlocks key = {list.id} link = {list.link} img = {list.image} imgContainer = {list.containerClass} hoverClass = {list.hoverClass} title = {list.title} text = {list.text}/>)
+	const showImgBlocks = imgBlockList.map((list)=> <ImgBlocks key = {list.id} link = {list.link} hoverClass = {list.hoverClass}  title = {list.title} text = {list.text} imgContainer = {list.containerClass} img = {list.image}/>)
 	return(
 		<div className={prop.imgContent}>
 			{showImgBlocks}

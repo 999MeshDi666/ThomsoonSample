@@ -10,9 +10,8 @@ const navLists = [
 ];
 
 function NavListBtns(prop){
-
 	return(
-		<li onClick={prop.hide}>{prop.title}</li>
+		<li onClick={prop.hide} id = {prop.navID}>{prop.title}</li>
 	);
 }
 
@@ -27,7 +26,7 @@ function NavWindows(prop){
 		return(
 			<div className="navList_windows">
 				<ul className="nav_list">
-					{navList.map((nav)=> <NavListBtns key = {nav.id} title = {nav.name} hide = {prop.hide}/>)}
+					{navList.map((nav)=> <NavListBtns key = {nav.id} navID = {nav.id} title = {nav.name} hide = {prop.hide}/>)}
 				</ul>
 			</div>
 		);
@@ -40,15 +39,16 @@ class Navigation extends React.Component{
 		super(prop);
 		this.state = {
 			isClicked: false,
-
 		};
 		this.navigationHandler = this.navigationHandler.bind(this);
+	
 	};
 
 	navigationHandler(){
 		this.setState((prevState)=>({
-			isClicked: !prevState.isClicked
+			isClicked: !prevState.isClicked,
 		}));
+	
 	};
 
   render(){

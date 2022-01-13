@@ -34,7 +34,7 @@ const imgBlocksList = [
 function MainIndexContent(){
 	return(
 		<div className="main_indexContent">
-			<TextContent title = {indexText.title} text = {indexText.text}/>
+			<TextContent class = "text_content" title = {indexText.title} text = {indexText.text}/>
 			<ImgContent imgContent = 'index_img_content' imgBList = {imgBlocksList}/>
 		</div>
 	);
