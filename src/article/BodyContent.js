@@ -5,10 +5,13 @@ import Container from "../general-componetnts/Container";
 
 class Content extends React.Component{
 
+
+
   render(){
+   
     return(
       <article className="article">
-        <Container contentId = {4}/>
+        <Container show = {this.props.id}/>
       </article>
 
     );
