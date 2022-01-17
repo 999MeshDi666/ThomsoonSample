@@ -3,8 +3,7 @@ import ImgContent from "../general-componetnts/ImgBlocks";
 import TextContent from "../general-componetnts/TextContent";
 import TextBlock from "../general-componetnts/TextBlock";
 import block from '../img/imgBlock.png';
-import tblock from '../img/tblock.png';
-import sblock from '../img/sblock.png';
+
 
 
 //for text content

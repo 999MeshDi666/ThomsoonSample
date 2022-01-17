@@ -1,14 +1,14 @@
 import React from "react";
 
 function TextBlock(prop){
-	if(prop.p == 1){
+	if(prop.p === 1){
 		return(
 			<div className="text_block">
 				<p className = "text_block_first">{prop.text_first}</p>
 			</div>
 		);
 	}
-	else if(prop.p == 2){
+	else if(prop.p === 2){
 		return(
 			<div className="text_block">
 				<p className = "text_block_first">{prop.text_first}</p>
@@ -17,7 +17,7 @@ function TextBlock(prop){
 		);
 
 	}
-	else if(prop.p == 3){
+	else if(prop.p === 3){
 		return(
 			<div className="text_block">
 				<p className = "text_block_first">{prop.text_first}</p>

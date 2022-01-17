@@ -1,7 +1,19 @@
 import React from "react";
 import Header from './Header';
+import { Link } from "react-router-dom";
 
+const links = [
+	{id: 1, link: '/', name: 'Home'},
+	{id: 2, link: '/projects', name: 'Projects'},
+	{id: 3, link: '/about', name: 'About'},
+	{id: 4, link: '/contact', name: 'Contact'},
+];
 
+function NavLinks(prop){
+	return(
+		<li onClick={prop.hideNav}><Link to={prop.link}>{prop.name}</Link></li>
+	);
+}
 
 function NavWindows(prop){
 	if(!prop.show){
@@ -10,10 +22,11 @@ function NavWindows(prop){
 		)
 	}
 	else{
+		const links = prop.linkLists
 		return(
 			<div className="navList_windows">
 				<ul className="nav_list">
-					{prop.children}
+					{links.map((nav)=> <NavLinks key = {nav.id} link = {nav.link} name = {nav.name} hideNav = {prop.hideNav}/>)}
 				</ul>
 			</div>
 		);
@@ -42,12 +55,7 @@ class Navigation extends React.Component{
     return(
       <div className='navigation'>
         <Header clicked = {this.state.isClicked} navHandler = {this.navigationHandler}/>
-				<NavWindows show = {this.state.isClicked}>
-					<li onClick={this.navigationHandler} id="#home" onMouseDown={this.props.homeHandler}>Home</li> 
-					<li onClick={this.navigationHandler} id="#project" onMouseDown={this.props.propjectHandler}>Projects</li> 
-					<li onClick={this.navigationHandler} id="#about" onMouseDown={this.props.aboutHandler}>About us</li> 
-					<li onClick={this.navigationHandler} id="#contact" onMouseDown={this.props.contactHandler}>Contact</li> 
-				</NavWindows>
+				<NavWindows show = {this.state.isClicked} hideNav = {this.navigationHandler} linkLists = {links}/>
       </div>
     );
   }
