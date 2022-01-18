@@ -1,5 +1,5 @@
 import React from "react";
-import TextContent from "../general-componetnts/TextContent";
+import TextTitle from "../general-componetnts/TextTitle";
 import ImgContent from "../general-componetnts/ImgBlocks";
 import block from '../img/imgBlock.png';
 import tblock from '../img/tblock.png';
@@ -32,7 +32,7 @@ const imgBlocksList = [
 function ProjectContent(){
 	return(
 		<div className="project_content">
-				<TextContent class = "text_content" title = {projectTxt.title} text = {projectTxt.text} />
+				<TextTitle class = "text_title" title = {projectTxt.title} text = {projectTxt.text} />
 	    	<ImgContent imgContent = "img_content" imgBList = {imgBlocksList}/>
 		</div>
 	);

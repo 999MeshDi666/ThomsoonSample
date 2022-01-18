@@ -1,5 +1,5 @@
 import React from "react";
-import TextContent from "../general-componetnts/TextContent";
+import TextTitle from "../general-componetnts/TextTitle";
 
 const contactText = {
   title: "Contact",
@@ -68,7 +68,7 @@ class ContactForm extends React.Component{
 function ContactContent(){
   return(
     <div className="contact_content">
-      <TextContent class = "text_content" title = {contactText.title} text = {contactText.text}/>
+      <TextTitle class = "text_title" title = {contactText.title} text = {contactText.text}/>
       <ContactForm/>
     </div>
   );

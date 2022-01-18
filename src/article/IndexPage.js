@@ -4,7 +4,7 @@ import block from '../img/imgBlock.png';
 import tblock from '../img/tblock.png';
 import sblock from '../img/sblock.png';
 import ImgContent from "../general-componetnts/ImgBlocks";
-import TextContent from "../general-componetnts/TextContent";
+import TextTitle from "../general-componetnts/TextTitle";
 
 
 const indexText = {
@@ -34,7 +34,7 @@ const imgBlocksList = [
 function MainIndexContent(){
 	return(
 		<div className="main_indexContent">
-			<TextContent class = "text_content" title = {indexText.title} text = {indexText.text}/>
+			<TextTitle class = "text_title" title = {indexText.title} text = {indexText.text}/>
 			<ImgContent imgContent = 'index_img_content' imgBList = {imgBlocksList}/>
 		</div>
 	);
