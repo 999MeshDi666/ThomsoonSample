@@ -6,6 +6,7 @@ import secondImg from "../../img/single_second.png";
 import thirdImg from "../../img/single_third.png";
 import fourthImg from "../../img/single_fourth.png";
 
+
 const singleText = {
 	title: 'SINGLE',
 	text: 'Branding, Website',

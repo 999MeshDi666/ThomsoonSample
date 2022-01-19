@@ -31,18 +31,15 @@ const txtSingle = {
 	text: 'Branding',
 }
 
-const txtFullScreen = {
-	title: 'Full Screen',
-	text: 'Branding',
-}
+
 
 const imgBlocksList = [
-	{id: 1, link: "##", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
-	{id: 2, link: "https://www.youtube.com/", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtFullScreen.title, text: txtFullScreen.text},
-	{id: 3, link: "##", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
-	{id: 4, link: "##", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
-	{id: 5, link: "##", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
-	{id: 6, link: "##", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 1, link: "/single", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 2, link: "/single", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 3, link: "/single", image: block, containerClass: "general_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 4, link: "/single", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 5, link: "/single", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
+	{id: 6, link: "/single", image: block, containerClass: "general_block general_about_block", hoverClass: "hover_block", title: txtSingle.title, text: txtSingle.text},
 ];
 
 function AboutUs(){

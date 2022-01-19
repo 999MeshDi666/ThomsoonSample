@@ -77,9 +77,9 @@ function ContactContent(){
 class Contact extends React.Component{
   render(){
     return(
-      <section className="contact_page general_page">
+      <article className="contact_page general_page">
         <ContactContent/>
-      </section>
+      </article>
 
     );
   } 

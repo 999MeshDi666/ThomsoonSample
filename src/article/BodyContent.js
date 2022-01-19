@@ -14,8 +14,8 @@ class Content extends React.Component{
       <main className="main_content">
         <Container>
           <Routes>
-            <Route exact path='/home' element = {<Index/>}/>
-            <Route path='/projects'  element= {<Projects/>}/>
+            <Route exact path='/' element = {<Index/>}/>
+            <Route path='/projects' element= {<Projects/>}/>
             <Route path='/about'  element= {<About/>}/>
             <Route path='/contact'  element= {<Contact/>}/>
             <Route path='/single'  element= {<Single/>}/>

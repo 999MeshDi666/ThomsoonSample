@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function HoverBlock(prop){
 	return(
-		<a href={prop.link} target="_blank" className= {prop.hoverClass}>
+		<Link to={prop.link} className= {prop.hoverClass}>
 			<div className = 'hover_block_wrapper'>
 				<h2>{prop.title}</h2>
 				<p>{prop.text}</p>
 			</div>
-		</a>
+		</Link>
 	);
 };
 
 function ImgBlocks(prop){
 	return(
 		<div className={prop.imgContainer}>
-			<img  src={prop.img}/>
+			<img  src={prop.img} alt = ""/>
 			<HoverBlock link = {prop.link} hoverClass = {prop.hoverClass} title = {prop.title} text = {prop.text}/>
 		</div>
 	);
